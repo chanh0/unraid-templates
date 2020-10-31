@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Container version="2">
+  <TemplateURL>https://github.com/marcmtk/unraid-templates/blob/master/Etherpad.xml</TemplateURL>
+  <Date>2020-10-31</Date>
+  <Beta>False</Beta>
+  <Category>Network:Management Productivity: Tools:</Category>
+  <Name>Portainer</Name>
+  <Project>https://portainer.io</Project>
+  <Description>
+    Etherpad is a real-time collaborative editor scalable to thousands of simultaneous real time users. It provides full data export capabilities, and runs on your server, under your control.
+  </Description>
+  <Overview>
+    Etherpad is a real-time collaborative editor scalable to thousands of simultaneous real time users. It provides full data export capabilities, and runs on your server, under your control.
+  </Overview>
+  <Registry>https://registry.hub.docker.com/u/etherpad/etherpad</Registry>
+  <GitHub>https://github.com/ether/etherpad-lite</GitHub>
+  <Repository>portainer/portainer</Repository>
+  <Support>NA</Support>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>9001</HostPort>
+        <ContainerPort>9001</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Network Default="bridge">bridge</Network>
+  <Environment/>
+  <WebUI>http://[IP]:[PORT:9000]/</WebUI>
+  <Banner></Banner>
+  <Icon></Icon>
+  <ExtraParams></ExtraParams>
+  <Config Type="Port" Name="Web Interface Port" Target="9001" Default="9001" Mode="tcp" Display="always-hide" Required="true" Description="This is WebUI port.">9001</Config>
+</Container>
