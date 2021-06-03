@@ -1,17 +1,18 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
-  <Name>avbook</Name>
+  <Name>AV Book</Name>
   <Repository>xjx2008/avbook</Repository>
   <Registry>https://hub.docker.com/r/xjx2008/avbook</Registry>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
+  <BindTime>true</BindTime>
   <Project>https://github.com/xiaojunxi2008/avbook_docker</Project>
   <Overview>avbook Docker image.</Overview>
   <Category>Downloaders: Tools:</Category>
   <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
   <Description>avbook Docker image.</Description>
   <Networking>
-   <Mode>bridge</Mode>
+   <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>8999</HostPort>
@@ -20,9 +21,5 @@
       </Port>
     </Publish>  
   </Networking>
-  <Network Default="bridge">bridge</Network>
   <WebUI>http://[IP]:[PORT:8999]/</WebUI>
-  <Environment>  
-  </Environment>
-  <Config></Config>
 </Container>
