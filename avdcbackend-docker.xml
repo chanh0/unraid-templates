@@ -18,10 +18,12 @@
         <ContainerPort>5000</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-    </Publish>  </Networking>
-    <WebUI>http://[IP]:[PORT:5000]/</WebUI>
+    </Publish>  
+  </Networking>
+  <Network Default="bridge">bridge</Network>
+  <WebUI>http://[IP]:[PORT:5000]/</WebUI>
   <Environment>  
-      <Data>
+  <Data>
     <Volume>
       <HostDir>/mnt/user/appdata/avdc/avdc.db</HostDir>
       <ContainerDir>/avdc.db</ContainerDir>
