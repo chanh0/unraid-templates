@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Container version="2">
   <Name>AVDC-Backend</Name>
   <Repository>xjasonlyu/avdc-api</Repository>
@@ -8,10 +8,11 @@
   <Project>https://github.com/xjasonlyu/avdc-api</Project>
   <Overview>avdcbackend Docker image.</Overview>
   <Category>Downloaders: Tools:</Category>
+    <BindTime>true</BindTime>
   <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
   <Description>avdc-backend Docker image.</Description>
   <Networking>
-   <Mode>bridge</Mode>
+   <Mode>host</Mode>
     <Publish>
       <Port>
         <HostPort>5000</HostPort>
@@ -20,7 +21,6 @@
       </Port>
     </Publish>  
   </Networking>
-  <Network Default="bridge">bridge</Network>
   <WebUI>http://[IP]:[PORT:5000]/</WebUI>
   <Environment>  
   <Data>
@@ -31,5 +31,4 @@
     </Volume>
   </Data>
   </Environment>
-  <Config></Config>
 </Container>
