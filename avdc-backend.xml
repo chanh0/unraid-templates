@@ -8,7 +8,7 @@
   <Project>https://github.com/xjasonlyu/avdc-api</Project>
   <Overview>avdcbackend Docker image.</Overview>
   <Category>Downloaders: Tools:</Category>
-    <BindTime>true</BindTime>
+   <BindTime>true</BindTime>
   <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
   <Description>avdc-backend Docker image.</Description>
   <Networking>
@@ -31,4 +31,9 @@
     </Volume>
   </Data>
   </Environment>
+  <ExtraParams></ExtraParams>
+  <Config Type="Path" Name="avdc.db" Target="/avdc.db" Default="/mnt/user/appdata/avdc/avdc.db" Mode="rw" Display="advanced-hide" Required="true" Description="This is DB.">/mnt/user/appdata/avdc/avdc.db</Config>
+  <Config Type="Port" Name="Web Interface Port" Target="8999" Default="8999" Mode="tcp" Display="always-hide" Required="true" Description="This is WebUI port.">8999</Config>
+
+
 </Container>
