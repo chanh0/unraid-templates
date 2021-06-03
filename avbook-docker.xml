@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>avbook-docker</Name>
+  <Name>avbook</Name>
   <Repository>xjx2008/avbook</Repository>
   <Registry>https://hub.docker.com/r/xjx2008/avbook</Registry>
   <Shell>bash</Shell>
@@ -18,8 +18,10 @@
         <ContainerPort>8999</ContainerPort>
         <Protocol>tcp</Protocol>
       </Port>
-    </Publish>  </Networking>
-    <WebUI>http://[IP]:[PORT:8999]/</WebUI>
+    </Publish>  
+  </Networking>
+  <Network Default="bridge">bridge</Network>
+  <WebUI>http://[IP]:[PORT:8999]/</WebUI>
   <Environment>  
   </Environment>
   <Config></Config>
