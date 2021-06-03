@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>avbook-docker</Name>
+  <Repository>xjx2008/avbook</Repository>
+  <Registry>https://hub.docker.com/r/xjx2008/avbook</Registry>
+  <Network>host</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Project>https://github.com/xiaojunxi2008/avbook_docker</Project>
+  <Overview>avbook Docker image.</Overview>
+  <Category>Downloaders: Tools:</Category>
+  <WebUI></WebUI>
+  <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
+  <Description>avbook Docker image.</Description>
+  <Networking>
+    <Mode>host</Mode>
+  </Networking>
+  <Environment>  </Environment>
+  <Config></Config>
+</Container>
