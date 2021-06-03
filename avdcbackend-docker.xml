@@ -23,8 +23,8 @@
   <Environment>  
       <Data>
     <Volume>
-      <HostDir>/mnt/user/appdata/avdc</HostDir>
-      <ContainerDir>/avdc</ContainerDir>
+      <HostDir>/mnt/user/appdata/avdc/avdc.db</HostDir>
+      <ContainerDir>/avdc.db</ContainerDir>
       <Mode>rw</Mode>
     </Volume>
   </Data>
