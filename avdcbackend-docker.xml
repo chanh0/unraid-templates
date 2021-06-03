@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>avdcbackend-docker</Name>
+  <Name>AVDC-Backend</Name>
   <Repository>xjasonlyu/avdc-api</Repository>
   <Registry>https://https://hub.docker.com/r/xjasonlyu/avdc-api</Registry>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
-  <Project>hhttps://github.com/xjasonlyu/avdc-api</Project>
+  <Project>https://github.com/xjasonlyu/avdc-api</Project>
   <Overview>avdcbackend Docker image.</Overview>
   <Category>Downloaders: Tools:</Category>
   <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
