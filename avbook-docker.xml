@@ -20,6 +20,7 @@
       </Port>
     </Publish>  </Networking>
     <WebUI>http://[IP]:[PORT:8999]/</WebUI>
-  <Environment>  </Environment>
+  <Environment>  
+  </Environment>
   <Config></Config>
 </Container>
