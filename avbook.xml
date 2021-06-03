@@ -22,4 +22,6 @@
     </Publish>  
   </Networking>
   <WebUI>http://[IP]:[PORT:8999]/</WebUI>
+  <Config Type="Port" Name="Web Interface Port" Target="8999" Default="8999" Mode="tcp" Display="always-hide" Required="true" Description="This is WebUI port.">8999</Config>
+
 </Container>
