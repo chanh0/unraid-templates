@@ -13,8 +13,15 @@
   <Icon>https://github.com/guyueyingmu/avbook/blob/master/public/favicon.ico</Icon>
   <Description>avbook Docker image.</Description>
   <Networking>
-    <Mode>host</Mode>
-  </Networking>
+   <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>8000</HostPort>
+        <ContainerPort>8000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>  </Networking>
+    <WebUI>http://[IP]:[PORT:8000]/</WebUI>
   <Environment>  </Environment>
   <Config></Config>
 </Container>
