@@ -33,7 +33,7 @@
   </Environment>
   <ExtraParams></ExtraParams>
   <Config Type="Path" Name="avdc.db" Target="/avdc.db" Default="/mnt/user/appdata/avdc/avdc.db" Mode="rw" Display="advanced-hide" Required="true" Description="This is DB.">/mnt/user/appdata/avdc/avdc.db</Config>
-  <Config Type="Port" Name="Web Interface Port" Target="8999" Default="8999" Mode="tcp" Display="always-hide" Required="true" Description="This is WebUI port.">8999</Config>
+  <Config Type="Port" Name="Web Interface Port" Target="5000" Default="5000" Mode="tcp" Display="always-hide" Required="true" Description="This is WebUI port.">5000</Config>
 
 
 </Container>
